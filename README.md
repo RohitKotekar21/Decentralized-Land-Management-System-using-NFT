@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Land Management System Using NFTs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This application aims to revolutionize the traditional land registration system by leveraging blockchain technology. The current land registration process, particularly in India, is often slow, inconvenient, and prone to fraud. Our system addresses these issues by providing a distributed, secure, and transparent platform for land transactions.
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+1. Land Registration: Owners can register their land, converting each land parcel into an NFT (Non-Fungible Token).
+2. Land Listing: Tokenized land parcels can be listed for sale with specified amounts.
+3. Secure Transactions: Buyers can purchase land parcels securely through the platform.
+4. Resale: Owners can re-sell their land parcels in the future with new specified amounts.
+5. Fraud Prevention: The use of blockchain ensures that all transactions are transparent and immutable, significantly reducing the risk of fraud.
+6. Efficiency: The decentralized nature of the system accelerates the registration process and reduces paperwork.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="412" height="568" alt="image" src="https://github.com/user-attachments/assets/7f66eba4-b8d7-45c3-90ff-cf10c5c8f1f1" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_Figure 1: Represent the activity diagram of Land Management System illustrates the workflow of a decentralized land ownership and trading system using blockchain and NFTs, comprising two main processes: registering land and buying land._
+### Technologies Used
 
-### `npm test`
+### Frontend
+1. JavaScript
+2. React Framework
+3. CSS
+4. MetaMask Chrome Extension
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+1. Ethereum Blockchain (Truffle Suite)
+2. Solidity
+3. Ganache
+4. Web3
+5. IPFS Desktop
 
-### `npm run build`
+### Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Node.js: Ensure you have Node.js installed on your machine.
+2. MetaMask: Install the MetaMask extension on your Chrome browser.
+3. Ganache: Download and install Ganache for local blockchain development.
+4. IPFS(Interplanetary File System): Download and install IPFS for Desktop for uploading the document hash value.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository: git clone https://github.com/yourusername/land-management-system-nft.git cd land-management-system-nft
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies: npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Compile and deploy contracts: a) Ensure Ganache is running, then;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**truffle compile**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**truffle migrate**
 
-## Learn More
+4. Start the development server:\
+a) Ensure IPFS is running, then:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**npm start**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Configuration
 
-### Code Splitting
+### MetaMask Configuration:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Connect MetaMask to your local blockchain (usually at http://127.0.0.1:7545 because we are using Ganache).
 
-### Analyzing the Bundle Size
+Import accounts from Ganache to MetaMask.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### IPFS Configuration:
 
-### Making a Progressive Web App
+Ensure IPFS Desktop is installed and running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Configure IPFS to store land parcel data.
 
-### Advanced Configuration
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Register Land: Owners can register their land by filling out the necessary details. Each land parcel is converted into an NFT.
+2. List Land for Sale: Owners can list their tokenized land parcels for sale with a specified amount.
+3. Buy Land: Interested buyers can purchase listed land parcels if suffecient amount is available then successful transfer for land parcel to buyer account.
+4. Re-sell Land: Owners can re-sell their land parcels at any time by specifying a new amount.
 
-### Deployment
+# Results
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1c43b20a-133d-40d4-ac42-e98e5e62845d" />
 
-### `npm run build` fails to minify
+<img width="1920" height="965" alt="image" src="https://github.com/user-attachments/assets/59635348-71c5-4210-a744-8a732be6e9a4" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1920" height="963" alt="image" src="https://github.com/user-attachments/assets/b7054791-9a13-4f88-a491-cb8fe0b65c73" />
+<img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/58a3cdc1-79cc-4909-9e0e-07ac51e0c4e4" />
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/3adb6f0b-e673-47c3-8f43-7438a49ca9bc" />
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/f60ac53c-ee0e-4cc3-ab11-9e9ebd2e22a3" />
+
+## Contact
+
+For any questions or feedback, please contact
+
+*   **Email:** rohitkotekar2002@gmail.com
+
+
+
+
+
